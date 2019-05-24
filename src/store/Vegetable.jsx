@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { VegetableContext } from './Store';
-import { fetchAllArticles } from './selectors';
 
 const Vegetable = () => {
   const [, setVegetable] = useContext(VegetableContext);
