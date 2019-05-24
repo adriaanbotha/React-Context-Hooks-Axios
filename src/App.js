@@ -10,22 +10,25 @@ const App = () => {
   useEffect(() => {
     fetchAllArticles()
       .then((data) => {
-        console.log('data received ->', data);
+        console.log('news data received ->', data);
         setVegetable(data);
+        console.log("Type of vegetable ", typeof vegetable);
       })
       .catch((error: any) => {
         console.log('error ->', error);
       });
-  }, []);
+  }, []);   //This line is IMPORTANT since the [] makes sure it is also called only once !!!!
 
   return (
     <div>
       <h1>React Hooks In Context</h1>
       <h2>Today's Fruit is {fruit}</h2>
       <Vegetable />
-      <h3>Vegies and then News once the API Call returns</h3>
+      <h3>Vegies and then News Items once the API Call returns</h3>
 
-      {JSON.stringify(vegetable)}
+      {vegetable && Array.from(vegetable).map((veggie) => {
+        return (<ul>{JSON.stringify(veggie)}</ul>)
+      })}
 
     </div>
   )
