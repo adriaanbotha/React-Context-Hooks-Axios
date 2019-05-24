@@ -4,7 +4,7 @@ export const FruitContext = React.createContext([]);
 export const VegetableContext = React.createContext([]);
 
 const Store = ({children}) => {
-  const [fruit, setFruit] = useState('Tomato');
+  const [fruit, setFruit] = useState(['Tomato']);
   const [vegetable, setVegetable] = useState('Bananna');
 
   return (

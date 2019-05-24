@@ -4,7 +4,6 @@ import apiURL from '../../src/config/APIUrls';
 export const fetchAllArticles = () => {
     return fetchAllArticlesAsync()
       .then((data) => {
-        console.log("data ->", data);
         return data.data.items;
       })
       .catch((error: any) => {

@@ -11,7 +11,7 @@ const App = () => {
     fetchAllArticles()
       .then((data) => {
         console.log('data received ->', data);
-        setVegetable(data.toArray());
+        setVegetable(data);
       })
       .catch((error: any) => {
         console.log('error ->', error);
@@ -24,7 +24,9 @@ const App = () => {
       <h2>Today's Fruit is {fruit}</h2>
       <Vegetable />
       <h3>Vegies</h3>
-      {vegetable}
+
+      {JSON.stringify(vegetable)}
+
     </div>
   )
 };
