@@ -1,6 +1,8 @@
 
 
-Kudos to - Web Dev Profesh for the starting of this demo, I had to try and do it with an API, as side effects
+Kudo's to - **Web Dev Profesh** for the starting of this demo, I had to try and do it with an API, as side effects using useEffect() from React Hooks.
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
