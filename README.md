@@ -1,6 +1,8 @@
+Adding side effects or API calls to React - using the React Context API and Hooks
+
+Kudo's to - **Web Dev Profesh** for the starting of this demo, I had to try and do it with an API, as side effects using useEffect() from React Hooks.
 
 
-Kudos to - Web Dev Profesh for the starting of this demo, I had to try and do it with an API, as side effects
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
